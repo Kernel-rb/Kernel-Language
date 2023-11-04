@@ -1,6 +1,6 @@
 # Kernel Programming Language
 
-![Kernel Logo](link_to_logo_image)
+![Kernel Logo](https://imgs.search.brave.com/UyAKc9ewR0l1cyKCgHzEIY4Jn5MbgkN49d_Zi871cYo/rs:fit:560:320:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9lL2U2L0tl/cm5lbC1sb2dvLnBu/Zy81MTJweC1LZXJu/ZWwtbG9nby5wbmc)
 
 🚀 Welcome to the official repository of Kernel, a simple and elegant programming language implemented in Python. Kernel is designed to be easy to learn, lightweight, and ideal for educational purposes, scripting, and small to medium-sized projects.
 

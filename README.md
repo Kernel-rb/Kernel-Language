@@ -16,3 +16,21 @@ Welcome to the official repository of Kernel, a simple and elegant programming l
 
 To get started with Kernel, you'll need Python 3.7 or later. Follow these steps to install the interpreter:
 
+############## SOOOOOOOOOOOOOOOOOOOOOOOOOOOOON########################"""
+
+
+For usage examples, check the [documentation](link_to_documentation).
+
+## Contributing
+
+We welcome contributions. See [Contribution Guidelines](link_to_contributing_guidelines).
+
+## License
+
+Kernel is open-source under the [MIT License](link_to_license).
+
+Contact us at [your_email@example.com].
+
+Happy coding!
+
+

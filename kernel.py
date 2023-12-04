@@ -40,8 +40,7 @@ class Token:
         self.value = value
     def __repr__(self):
         # repr howa representation dyal l'objet ; for example : <Token:INTEGER, 3>
-        if self.value: return f'{self.type}:{self.value}'
-        return f'{self.type}'
+        return f'{self.type}:{self.value}' if self.value else f'{self.type}'
     
 # lexer class howa class dyal l'analyseur lexical 
 
@@ -57,7 +56,7 @@ class lexer :
 
     def make_tokens(self):
         Tokens = []
-        while  self.current_char != None :  # bach n3rfo bli bdina f text wla la
+        while self.current_char != None:  # bach n3rfo bli bdina f text wla la
             if self.current_char in ' \t':    # hna kan7aydo les espaces 
                 self.advance()
             elif self.current_char == "+" :
@@ -86,13 +85,13 @@ class lexer :
                 # return [], illegalCharError("'" + char + "'")
                 char = self.current_char
                 self.advance()
-                return [], Exception("'" + char + "'")
+                return [], Exception(f"'{char}'")
         return Tokens
     
     def make_number(self):
         num_str = ''
         dot_count = 0
-        while self.current_char != None and self.current_char in digits + '.':
+        while self.current_char != None and self.current_char in f'{digits}.':
             if self.current_char == '.' :
                 if dot_count == 1 : break # 7it number fih 1 point
                 dot_count += 1
@@ -108,5 +107,4 @@ class lexer :
 # Run :
 def run(text):
     lexer_instance = lexer(text)
-    tokens = lexer_instance.make_tokens() # make tokens howa fonction dyal l'analyseur lexical
-    return tokens
+    return lexer_instance.make_tokens()
